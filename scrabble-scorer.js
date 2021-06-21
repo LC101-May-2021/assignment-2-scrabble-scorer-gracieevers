@@ -45,17 +45,18 @@ function simpleScore(usersWord){
 }
 
 function vowelBonusScore(usersWord){
+    let vowelScore = 0
     let vowels = ["A", "E", "I", "O", "U"];
     
     for (let i = 0; i < usersWord.length; i++){
         if (vowels.includes(usersWord[i])){
-            vowelBonusScore = vowelBonusScore + 3;
+            vowelScore = vowelScore + 3;
         }
         else{
-            vowelBonusScore = vowelBonusScore + 1;
+            vowelScore = vowelScore + 1;
         }
     }
-    return vowelBonusScore;
+    return vowelScore;
 }
 
 function transform(oldPointStructure) {
