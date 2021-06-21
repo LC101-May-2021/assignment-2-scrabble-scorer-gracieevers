@@ -46,10 +46,10 @@ function simpleScore(usersWord){
 
 function vowelBonusScore(usersWord){
     let vowelScore = 0
-    let vowels = ["A", "E", "I", "O", "U"];
+    let vowels = ["a", "e", "i", "o", "u"];
     
     for (let i = 0; i < usersWord.length; i++){
-        if (vowels.includes(usersWord[i])){
+        if (vowels.includes(usersWord[i].toLowerCase())){
             vowelScore = vowelScore + 3;
         }
         else{
