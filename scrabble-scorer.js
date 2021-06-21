@@ -40,8 +40,7 @@ function initialPrompt() {
 //    console.log(result);
 };
 
-let simpleScore = 0;
-function simpleScorer(usersWord){
+function simpleScore(usersWord){
     return usersWord.length;
 }
 
@@ -98,7 +97,7 @@ const scoringAlgorithms = [
     {
         name: 'Simple Score',
         description: 'Each letter is worth 1 point.',
-        scorerFunction: simpleScorer,
+        scorerFunction: simpleScore,
     },
     {
         name: 'Bonus Vowels',
