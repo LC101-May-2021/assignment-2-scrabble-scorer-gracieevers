@@ -44,8 +44,7 @@ function simpleScore(usersWord){
     return usersWord.length;
 }
 
-let vowelBonusScore = 0;
-function vowelBonusScorer(usersWord){
+function vowelBonusScore(usersWord){
     let vowels = ["A", "E", "I", "O", "U"];
     
     for (let i = 0; i < usersWord.length; i++){
@@ -102,7 +101,7 @@ const scoringAlgorithms = [
     {
         name: 'Bonus Vowels',
         description: 'Vowels are 3 pts, consonants are 1 pt.',
-        scorerFunction: vowelBonusScorer,
+        scorerFunction: vowelBonusScore,
     },
     {
         name: 'Scrabble',
